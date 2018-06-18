@@ -133,21 +133,24 @@ $heros = array(
 "name" => "Mickey Mouse", 
 "publisher" => "Disney",
 "age" => 200,
-"characteristic" => "ears"
+"characteristic" => "ears",
+"location" => ""
 ),
 "SuperMan" => array
 (
 "name" => "Super Man",
 "publisher" => "Marvel",
 "age" => 80,
-"characteristic" => "cape"
+"characteristic" => "cape", 
+"location" => ""
 ),
 "Pipi" => array
 (
 "name" => "Pippi Langstrumpf",
 "publisher" => "Astrid Lindgren",
 "age" => 55,
-"characteristic" => "two bunches"
+"characteristic" => "two bunches",
+"location" => ""
 ),
 "Tom" => array
 (
@@ -170,7 +173,9 @@ foreach ($heros as $x => $x_value) {
 	echo "Publisher: " .$x_value['publisher'] ."<br>";
 	echo "Age: " .$x_value['age'] ."<br>";
 	echo "Characteristic: " .$x_value['characteristic'] ."<br>";
-	echo "Location: " .$x_value['location'] ."<br>";
+	if($x_value['location']!= ""){
+		echo "Location: " .$x_value['location'] ."<br>";
+	}
 	echo "<br>";
 }
 ?>
